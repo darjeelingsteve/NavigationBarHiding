@@ -12,6 +12,7 @@
 		48B52AE3263D8FD70051FE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B52AE2263D8FD70051FE5F /* Assets.xcassets */; };
 		48B52AE6263D8FD70051FE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B52AE4263D8FD70051FE5F /* LaunchScreen.storyboard */; };
 		48B52AEF263D919D0051FE5F /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B52AEE263D919D0051FE5F /* NumbersViewController.swift */; };
+		48B52AF1263D92360051FE5F /* NavigationBarBackgroundHidingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B52AF0263D92360051FE5F /* NavigationBarBackgroundHidingNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		48B52AE5263D8FD70051FE5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B52AE7263D8FD70051FE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48B52AEE263D919D0051FE5F /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		48B52AF0263D92360051FE5F /* NavigationBarBackgroundHidingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarBackgroundHidingNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		48B52AED263D91890051FE5F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				48B52AF0263D92360051FE5F /* NavigationBarBackgroundHidingNavigationController.swift */,
 				48B52AEE263D919D0051FE5F /* NumbersViewController.swift */,
 			);
 			path = "View Controllers";
@@ -143,6 +146,7 @@
 			files = (
 				48B52AEF263D919D0051FE5F /* NumbersViewController.swift in Sources */,
 				48B52ADA263D8FD00051FE5F /* AppDelegate.swift in Sources */,
+				48B52AF1263D92360051FE5F /* NavigationBarBackgroundHidingNavigationController.swift in Sources */,
 				48B52ADC263D8FD00051FE5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
