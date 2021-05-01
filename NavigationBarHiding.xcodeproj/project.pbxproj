@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		48B52AD6263D8FD00051FE5F /* NavigationBarHiding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBarHiding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B52AD6263D8FD00051FE5F /* Bar Hiding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bar Hiding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B52AD9263D8FD00051FE5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B52ADB263D8FD00051FE5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		48B52AE2263D8FD70051FE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		48B52AD7263D8FD00051FE5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48B52AD6263D8FD00051FE5F /* NavigationBarHiding.app */,
+				48B52AD6263D8FD00051FE5F /* Bar Hiding.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 			);
 			name = NavigationBarHiding;
 			productName = NavigationBarHiding;
-			productReference = 48B52AD6263D8FD00051FE5F /* NavigationBarHiding.app */;
+			productReference = 48B52AD6263D8FD00051FE5F /* Bar Hiding.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.NavigationBarHiding;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bar Hiding";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.NavigationBarHiding;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bar Hiding";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
