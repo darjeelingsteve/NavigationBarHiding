@@ -16,6 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let splitViewController = UISplitViewController(style: .doubleColumn)
         splitViewController.preferredDisplayMode = .oneBesideSecondary
         splitViewController.preferredSplitBehavior = .tile
+        splitViewController.setViewController(UIViewController(), for: .primary)
+        splitViewController.setViewController(NavigationBarBackgroundHidingNavigationController(rootViewController: NumbersViewController(style: .grouped)), for: .secondary)
+        splitViewController.setViewController(NavigationBarBackgroundHidingNavigationController(rootViewController: NumbersViewController(style: .grouped)), for: .compact)
         window?.rootViewController = splitViewController
         window?.makeKeyAndVisible()
     }
