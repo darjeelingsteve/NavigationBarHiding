@@ -18,7 +18,7 @@ final class NavigationBarBackgroundHidingNavigationController: UINavigationContr
         configureScrollingObservation(forViewController: viewController)
     }
     
-    override func popViewController(animated: Bool) -> UIViewController? {
+    @discardableResult override func popViewController(animated: Bool) -> UIViewController? {
         let poppedViewController = super.popViewController(animated: animated)
         if let topViewController = topViewController {
             configureScrollingObservation(forViewController: topViewController)
@@ -26,13 +26,13 @@ final class NavigationBarBackgroundHidingNavigationController: UINavigationContr
         return poppedViewController
     }
     
-    override func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
+    @discardableResult override func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
         let poppedViewControllers = super.popToViewController(viewController, animated: animated)
         configureScrollingObservation(forViewController: viewController)
         return poppedViewControllers
     }
     
-    override func popToRootViewController(animated: Bool) -> [UIViewController]? {
+    @discardableResult override func popToRootViewController(animated: Bool) -> [UIViewController]? {
         let poppedViewControllers = super.popToRootViewController(animated: animated)
         if let topViewController = topViewController {
             configureScrollingObservation(forViewController: topViewController)
