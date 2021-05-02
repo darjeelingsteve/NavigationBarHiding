@@ -72,10 +72,8 @@ final class NavigationBarBackgroundHidingNavigationController: UINavigationContr
 private extension UIView {
     func firstSubview<T: UIView>(ofKind kind: T.Type) -> T? {
         for subview in subviews {
-            if let matchingSubview = subview as? T {
+            if let matchingSubview = subview as? T ?? subview.firstSubview(ofKind: kind) {
                 return matchingSubview
-            } else {
-                return subview.firstSubview(ofKind: kind)
             }
         }
         return nil
