@@ -40,6 +40,13 @@ final class NavigationBarBackgroundHidingNavigationController: UINavigationContr
         return poppedViewControllers
     }
     
+    override func setViewControllers(_ viewControllers: [UIViewController], animated: Bool) {
+        super.setViewControllers(viewControllers, animated: animated)
+        if let topViewController = topViewController {
+            configureScrollingObservation(forViewController: topViewController)
+        }
+    }
+    
     private func configureScrollingObservation(forViewController viewController: UIViewController) {
         scrollViewContentOffsetObservation = nil
         guard let scrollView = viewController.primaryChildScrollView else {
