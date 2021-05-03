@@ -92,6 +92,7 @@ private extension UIViewController {
         if let scrollView = view as? UIScrollView {
             return scrollView
         }
+        view.layoutIfNeeded()
         return view.firstSubview(ofKind: UIScrollView.self)
     }
 }
