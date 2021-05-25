@@ -17,8 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         splitViewController.preferredDisplayMode = .oneBesideSecondary
         splitViewController.preferredSplitBehavior = .tile
         splitViewController.setViewController(UIViewController(), for: .primary)
-        splitViewController.setViewController(NavigationBarBackgroundHidingNavigationController(rootViewController: NumbersViewController(style: .grouped)), for: .secondary)
-        splitViewController.setViewController(NavigationBarBackgroundHidingNavigationController(rootViewController: NumbersViewController(style: .grouped)), for: .compact)
+        
+        if ProcessInfo.processInfo.environment["USE_PRIVATE_API"] == "YES" {
+            splitViewController.setViewController(UINavigationController(rootViewController: NumbersViewController(style: .grouped)), for: .secondary)
+            splitViewController.setViewController(UINavigationController(rootViewController: NumbersViewController(style: .grouped)), for: .compact)
+        } else {
+            splitViewController.setViewController(NavigationBarBackgroundHidingNavigationController(rootViewController: NumbersViewController(style: .grouped)), for: .secondary)
+            splitViewController.setViewController(NavigationBarBackgroundHidingNavigationController(rootViewController: NumbersViewController(style: .grouped)), for: .compact)
+        }
+        
         window?.rootViewController = splitViewController
         window?.makeKeyAndVisible()
     }
